@@ -48,12 +48,21 @@ a {
 
 	.label {
 		box-sizing: border-box;
+		background-color: white;
+		border: 1px solid $main-color;
+		color: $main-text;
 		height: 100px;
-		background-color: $main-color;
 		text-align: center;
 		font-size: 30px;
 		padding-top: 25px;
 		margin-top: 10px;
+		border-radius: 15px;
+		transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, border 0.1s ease-in-out;
+	}
+	.label:hover {
+		box-sizing: border-box;
+		background-color: $main-color;
+		color: black;
 	}
 
 }
@@ -122,7 +131,6 @@ a {
 
 		.photo {
 			box-sizing: border-box;
-			// background-color: $main-color;
 			height: 40px;
 			width: 300px;
 			text-align: left;
